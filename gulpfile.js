@@ -3,7 +3,11 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var neat = require('node-neat').includePaths;
 
+var browserSync = require('browser-sync'); // Reloads the browser when I save.
+var reload = browserSync.reload;
 
+
+// this compiles sass bourbon and neat files
 gulp.task('styles', function () {
     return gulp.src('styles/**/*.scss')
         .pipe(sass({
@@ -20,6 +24,7 @@ gulp.task('scripts', function() {
 
 
 
+// this loads the ghost server
 gulp.task('ghost', ['styles', 'scripts'], function() {  
     var ghost = require('ghost');
     process.env.NODE_ENV = 'development';
@@ -30,7 +35,5 @@ gulp.task('ghost', ['styles', 'scripts'], function() {
 
 
 
-gulp.task('default', function() {
-  console.log('this is the gulp file');
-});
+gulp.task('default', ['ghost']);
 
