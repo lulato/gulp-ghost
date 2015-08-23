@@ -13,14 +13,38 @@
     </nav>
 </header>
 
+
+
 <main class="content" role="main">
+
+    <article class="type-system-serif">
+      <p class="type">{{post_class}}</p>
+      <h1>{{title}}</h1>
+
+      <h2>{{excerpt words="26"}}</h2>
+      <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
+      <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
+        <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
+      </p>
+      {{#if image}}
+      <img src="{{image}}" alt="img">
+      {{/if}}
+      <h3>Subheading lorem</h3>
+      <p><span>Consequatur ullam, voluptatum</span>
+      {{content}}
+       </p>
+      <hr>
+      <p class="author">Author Name</p>
+    </article>
+
 
     <article class="{{post_class}}">
 
         <header class="post-header">
             <h1 class="post-title">{{title}}</h1>
             <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
+                {{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
             </section>
         </header>
 
@@ -74,6 +98,11 @@
         </footer>
 
     </article>
+
+
+
+
+
 
 </main>
 

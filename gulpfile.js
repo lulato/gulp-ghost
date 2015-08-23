@@ -9,6 +9,8 @@ var reload = browserSync.reload;
 
 // this compiles sass bourbon and neat files
 gulp.task('styles', function () {
+    // var bower = require('main-bower-files');
+    
     return gulp.src('styles/**/*.scss')
         .pipe(sass({
             includePaths: ['styles'].concat(neat)
