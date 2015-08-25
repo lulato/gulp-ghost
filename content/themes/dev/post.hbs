@@ -17,90 +17,87 @@
 
 <main class="content" role="main">
 
-    <article class="type-system-serif">
-      <p class="type">{{post_class}}</p>
-      <h1>{{title}}</h1>
+    <article class="{{post_class}} type-system-serif">
 
-      <h2>{{excerpt words="26"}}</h2>
-      <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
-      <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. Consequatur a, ullam, voluptatum incidunt neque doloremque vel inventore distinctio laudantium harum</a> illo quam nulla dolor alias iure impedit! Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, a, ullam, voluptatum incidunt neque porro numquam doloremque vel inventore distinctio laudantium harum illo quam nulla dolor alias iure impedit.
-        <a href="javascript:void(0)" class="read-more">Read More <span>&rsaquo;</span></a>
-      </p>
+
+      <header>
+        <p class="type">{{post_class}}</p>
+        <h1>{{title}}</h1>
+
+        <p class="date">
+            <time 
+            datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="DD MMMM YYYY"}}</time> 
+            {{tags prefix=" on "}}
+        </p>
+
+      </header>
+
+
+
+      {{#author}}
+        <a class="author" href="{{url}}">{{name}}</a>
+        <p class="author">{{name}}</p>
+      {{/author}}
+
+      {{!-- Image --}}
       {{#if image}}
       <img src="{{image}}" alt="img">
       {{/if}}
-      <h3>Subheading lorem</h3>
-      <p><span>Consequatur ullam, voluptatum</span>
-      {{content}}
-       </p>
+
+      <h2>{{excerpt words="26"}}</h2>
+      <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
+
+      <section class="post-content">
+          {{content}}
+      </section>
       <hr>
-      <p class="author">Author Name</p>
+
+
+
+      <footer class="post-footer">
+
+      {{! Everything inside the #author tags pulls data from the author }}
+      {{#author}}
+          <p class="author">{{name}}</p>
+          
+          {{#if image}}
+          <figure class="author-image">
+              <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+          </figure>
+          {{/if}}
+
+          <section class="author">
+              <h4><a href="{{url}}">{{name}}</a></h4>
+
+              {{#if bio}}
+                  <p>{{bio}}</p>
+              {{else}}
+                  <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+              {{/if}}
+              <div class="author-meta">
+                  {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+                  {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
+              </div>
+          </section>
+
+      {{/author}}
+
+          {{> social}}
+
+      </footer>
+
     </article>
 
 
     <article class="{{post_class}}">
 
-        <header class="post-header">
-            <h1 class="post-title">{{title}}</h1>
-            <section class="post-meta">
-                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">
-                {{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
-            </section>
-        </header>
 
-        <section class="post-content">
-            {{content}}
-        </section>
 
-        <footer class="post-footer">
 
-        {{! Everything inside the #author tags pulls data from the author }}
-        {{#author}}
 
-            {{#if image}}
-            <figure class="author-image">
-                <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-            </figure>
-            {{/if}}
-
-            <section class="author">
-                <h4><a href="{{url}}">{{name}}</a></h4>
-
-                {{#if bio}}
-                    <p>{{bio}}</p>
-                {{else}}
-                    <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-                {{/if}}
-                <div class="author-meta">
-                    {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                    {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-                </div>
-            </section>
-
-        {{/author}}
-
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url={{url absolute="true"}}"
-                   onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
-                    <span class="hidden">Google+</span>
-                </a>
-            </section>
-
-        </footer>
 
     </article>
-
-
-
 
 
 

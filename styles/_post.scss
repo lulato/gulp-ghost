@@ -1,3 +1,7 @@
+.content {
+  @include span-columns(8);
+}
+
 article.type-system-serif {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
@@ -140,3 +144,4 @@ article.type-system-serif {
     font-style: italic;
   }
 }
+
