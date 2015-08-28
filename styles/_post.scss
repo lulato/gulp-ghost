@@ -1,5 +1,6 @@
 .content {
-  @include span-columns(8);
+  @include outer-container;
+  
 }
 
 article.type-system-serif {
@@ -14,6 +15,8 @@ article.type-system-serif {
   $serif: 'Lusitana', serif;
   $serif-2: 'Merriweather', serif;
   $sans-serif: 'Merriweather Sans', sans-serif;
+
+  @include span-columns(8);
 
   @include clearfix;
   font-family: $serif-2;

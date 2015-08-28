@@ -2,9 +2,6 @@
 @import "neat";
 @import "base/base";
 
-.wrapper {
-  @include outer-container;
-}
 
 @import "nav";
 @import "post";
