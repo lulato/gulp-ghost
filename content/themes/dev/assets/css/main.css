@@ -438,14 +438,16 @@ header.navigation {
     display: table; }
 
 article.type-system-serif {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
   font-family: "Merriweather", serif;
   text-align: left; }
-  article.type-system-serif:last-child {
-    margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    article.type-system-serif {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 82.94039%; }
+      article.type-system-serif:last-child {
+        margin-right: 0; } }
   article.type-system-serif::after {
     clear: both;
     content: "";
