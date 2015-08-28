@@ -21,13 +21,18 @@ gulp.task('styles', function () {
 
 
 gulp.task('scripts', function() {
-  console.log('this is the scrpts section');
+  return gulp.src('scripts/index.js')
+  .pipe(gulp.dest('content/themes/dev/assets/js'));
 });
 
-
+// watches 
+gulp.task("watch", function(){
+    // gulp.watch('./App/**/*.js', ['scripts']);
+    gulp.watch('styles/**/*.scss', ['styles']);
+});
 
 // this loads the ghost server
-gulp.task('ghost', ['styles', 'scripts'], function() {  
+gulp.task('ghost', ['styles', 'scripts','watch'], function() {  
     var ghost = require('ghost');
     process.env.NODE_ENV = 'development';
     ghost({ config: __dirname + '/ghost-config.js' }).then(function (ghostServer) {
