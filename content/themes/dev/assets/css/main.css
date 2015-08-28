@@ -392,8 +392,6 @@ header.navigation {
     header.navigation .search-bar form {
       position: relative; }
       header.navigation .search-bar form input[type=search] {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
         box-sizing: border-box;
         background: #404040;
         border-radius: 6px;
@@ -427,8 +425,6 @@ header.navigation {
         position: relative;
         width: 16em; }
         header.navigation .search-bar input {
-          -webkit-box-sizing: border-box;
-          -moz-box-sizing: border-box;
           box-sizing: border-box;
           display: block; } }
 
