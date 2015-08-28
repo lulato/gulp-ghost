@@ -1,26 +1,9 @@
-<div class="nav">
-this header is coming from .nav
-    <h3 class="nav-title">Menu</h3>
-    <a href="#" class="nav-close">
-        <span class="hidden">Close</span>
-    </a>
-    <ul>
-        {{#foreach navigation}}
-            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation">
-                <a href="{{url absolute="true"}}">{{label}}</a>
-            </li>
-        {{/foreach}}
-    </ul>
-    <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-</div>
-<span class="nav-cover"></span>
-
 
 {{!-- From bitters --}}
 <header class="navigation" role="banner">
   <div class="navigation-wrapper">
-    <a href="javascript:void(0)" class="logo">
-      <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo Image">
+    <a href="{{@blog.url}}" class="logo">
+      <img src="{{@blog.logo}}" alt="Logo Image">
     </a>
     <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
     <nav role="navigation">
@@ -33,15 +16,19 @@ this header is coming from .nav
 
       </ul>
     </nav>
-    <div class="navigation-tools">
+
+{{!--     <div class="navigation-tools">
       <div class="search-bar">
+
         <form role="search">
           <input type="search" placeholder="Enter Search" />
           <button type="submit">
             <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
           </button>
         </form>
-      </div>
-    </div>
+
+      </div> <!-- end of search-bar -->
+    </div> <!-- end of navigation-tools --> --}}
+
   </div>
 </header>
