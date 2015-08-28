@@ -431,7 +431,8 @@ header.navigation {
 .content {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  margin-top: 1em; }
   .content::after {
     clear: both;
     content: "";

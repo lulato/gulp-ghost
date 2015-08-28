@@ -1,36 +1,25 @@
 {{! This is the post loop - each post will be output using this markup }}
 {{#foreach posts}}
 
-<article class="{{post_class}}">
-    <header class="post-header">
-        <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
-    </header>
-    <section class="post-excerpt">
-        <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
-    </section>
+  <article class="type-system-serif {{post_class}}">
+      <header class="post-header">
+          <h1><a href="{{url}}">{{{title}}}</a></h1>
+      </header>
+      <section class="post-excerpt">
+        {{#if image}}
+          
+          <a href="{{url}}"><img src="{{image}}" alt=""></a>
+          
+        {{/if}}
+        <span>{{tags}}</span>
+          
+          <p>
+            {{excerpt words="26"}} 
+            <a href="{{url}}" class="read-more">Read More <span>&rsaquo;</span></a>
+          </p>
+      </section>
 
-    <footer class="post-meta">
-        {{#if author.image}}<img class="author-thumb" src="{{author.image}}" alt="Author image" nopin="nopin" />{{/if}}
-        {{author}}
-        {{tags prefix=" on "}}
-        <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
-    </footer>
-</article>
-
-<article class="type-system-serif">
-  <p class="type">Article Type</p>
-
-  <h1><a href="{{url}}">{{{title}}}</a></h1>
-  <h2>{{excerpt words="26"}}</h2>
-  <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
-  <p><span>Lorem ipsum dolor sit amet</span>, consectetur adipisicing elit. 
-    <a href="{{url}}" class="read-more">Read More <span>&rsaquo;</span></a>
-  </p>
-  <h3>Subheading lorem</h3>
-  <p><span>Consequatur ullam, voluptatum</span> incidunt neque porro numquam doloremque vel inventore distinctio</p>
-  <hr>
-  <p class="author">Author Name</p>
-</article>
+  </article>
 
 {{/foreach}}
 
