@@ -202,6 +202,22 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.content {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em; }
+  .content::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.tags {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 header.navigation {
   background-color: #333;
   border-bottom: 1px solid #1a1a1a;
@@ -428,16 +444,6 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
-.content {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em; }
-  .content::after {
-    clear: both;
-    content: "";
-    display: table; }
-
 article.type-system-serif {
   padding: 1em;
   font-family: "Merriweather", serif;
@@ -491,6 +497,10 @@ article.type-system-serif {
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.5em; }
+    article.type-system-serif h1 a {
+      color: black; }
+      article.type-system-serif h1 a:hover {
+        color: #477dca; }
     @media screen and (min-width: 40em) {
       article.type-system-serif h1 {
         font-size: 2.6em; } }

@@ -1,0 +1,12 @@
+.content {
+  @include outer-container;
+  margin-top: 1em;
+  
+}
+
+.tags {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
