@@ -20,6 +20,8 @@ article.type-system-serif {
   $serif-2: 'Merriweather', serif;
   $sans-serif: 'Merriweather Sans', sans-serif;
 
+  padding: 1em;
+
   
   @include media($medium-screen) {
     @include span-columns(10);

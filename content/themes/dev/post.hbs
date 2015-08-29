@@ -62,12 +62,14 @@
           <p class="author">{{name}}</p>
           
           {{#if image}}
+            <a href="{{url}}"><img src="{{image}}" alt="{{name}}'s Picture"></a>
           <figure class="author-image">
-              <a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+              <a class="" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
           </figure>
           {{/if}}
 
           <section class="author">
+
               <h4><a href="{{url}}">{{name}}</a></h4>
 
               {{#if bio}}

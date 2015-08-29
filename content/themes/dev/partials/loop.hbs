@@ -6,13 +6,13 @@
           <h1><a href="{{url}}">{{{title}}}</a></h1>
       </header>
       <section class="post-excerpt">
+        <span>{{tags}}</span>
         {{#if image}}
           
           <a href="{{url}}"><img src="{{image}}" alt=""></a>
           
         {{/if}}
-        <span>{{tags}}</span>
-          
+
           <p>
             {{excerpt words="26"}} 
             <a href="{{url}}" class="read-more">Read More <span>&rsaquo;</span></a>
