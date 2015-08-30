@@ -12,4 +12,7 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('.related-posts').ghostRelated();
 });
+

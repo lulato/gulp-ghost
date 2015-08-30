@@ -22,14 +22,18 @@
 
       <header>
         <p class="type">{{post_class}}</p>
-        <h1>{{title}}</h1>
+        <h1 class="post-title">{{title}}</h1>
 
-        <p class="date">
+        <p class="post-meta date">
             <time 
             datetime="{{date format='YYYY-MM-DD'}}">
             {{date format="DD MMMM YYYY"}}</time> 
             {{tags prefix=" on "}}
         </p>
+
+{{!--         <section class="post-meta">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+        </section> --}}
 
       </header>
 
@@ -86,6 +90,9 @@
       {{/author}}
 
           {{> social}}
+
+        <ul class="related-posts">
+        </ul>
 
       </footer>
 
