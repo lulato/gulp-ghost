@@ -115,4 +115,38 @@
 
 </main>
 
+<aside class="cards read-next">
+    {{#next_post}}
+      <a class="card" href="{{url}}">
+        <div class="card-image">
+          <img src="{{image}}" alt="">
+        </div>
+        <div class="card-header">
+          {{title}}
+        </div>
+        <div class="card-copy">
+          <p>{{excerpt words="19"}}&hellip;</p>
+        </div>
+      </a>
+    {{/next_post}}
+    {{#prev_post}}
+
+      <a class="card" href="{{url}}">
+        <div class="card-image">
+          <img src="{{image}}" alt="">
+        </div>
+        <div class="card-header">
+          {{title}}
+        </div>
+        <div class="card-copy">
+          <p>{{excerpt words="19"}}&hellip;</p>
+        </div>
+      </a>
+      
+    {{/prev_post}}
+
+</aside>
+
+
+
 {{/post}}
