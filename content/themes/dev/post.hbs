@@ -40,8 +40,7 @@
 
 
       {{#author}}
-        <a class="author" href="{{url}}">{{name}}</a>
-        <p class="author">{{name}}</p>
+        <p> <a class="author" href="{{url}}">{{name}}</a></p>
       {{/author}}
 
       {{!-- Image --}}
@@ -49,9 +48,9 @@
       <img src="{{image}}" alt="img">
       {{/if}}
 
-      <h2>{{excerpt words="26"}}</h2>
+{{!--       <h2>{{excerpt words="26"}}</h2>
       <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
-
+ --}}
       <section class="post-content">
           {{content}}
       </section>
@@ -63,12 +62,16 @@
 
       {{! Everything inside the #author tags pulls data from the author }}
       {{#author}}
-          <p class="author">{{name}}</p>
+          <p> <a class="author" href="{{url}}">{{name}}</a></p>
           
           {{#if image}}
-            <a href="{{url}}"><img src="{{image}}" alt="{{name}}'s Picture"></a>
+
+{{!--             <a href="{{url}}"><img src="{{image}}" alt="{{name}}'s Picture"></a> --}}
+
           <figure class="author-image">
-              <a class="" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
+              <a class="img" href="{{url}}" style="background-image: url({{image}})">
+                <span class="hidden">{{name}}'s Picture</span>
+              </a>
           </figure>
           {{/if}}
 
