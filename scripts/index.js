@@ -14,6 +14,8 @@ $(document).ready(function() {
   });
 
   $('.related-posts').ghostRelated();
+
+  // this is kinda junky still working on an alternative
   $('.featured').removeClass( "hidden");
 });
 
