@@ -14,5 +14,8 @@ $(document).ready(function() {
   });
 
   $('.related-posts').ghostRelated();
+  $('.featured').removeClass( "hidden");
 });
+
+
 

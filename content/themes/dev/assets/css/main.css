@@ -480,17 +480,17 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
-.image-gradient-dynamic {
+.featured {
   line-height: 0;
   position: relative;
   width: 100%; }
-  .image-gradient-dynamic img {
+  .featured img {
     height: auto;
     left: 0;
     position: relative;
     top: 0;
     width: 100%; }
-  .image-gradient-dynamic .copy {
+  .featured .copy {
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -502,12 +502,12 @@ header.navigation {
     text-align: center;
     top: 50%;
     z-index: 999; }
-    .image-gradient-dynamic .copy p {
+    .featured .copy p {
       color: white;
       line-height: 1.5em;
       padding: 1em 2em;
       position: relative; }
-  .image-gradient-dynamic .overlay {
+  .featured .overlay {
     background-color: rgba(255, 0, 0, 0.1);
     background-image: -webkit-linear-gradient(-270deg, rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
     background-image: linear-gradient(0deg,rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4), , , , , , , , );
@@ -517,7 +517,7 @@ header.navigation {
     right: 0px;
     bottom: 0px;
     left: 0px; }
-    .image-gradient-dynamic .overlay:after {
+    .featured .overlay:after {
       background-color: rgba(0, 128, 128, 0.2);
       background-image: -webkit-linear-gradient(-360deg, rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
       background-image: linear-gradient(90deg,rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2), , , , , , , , );
@@ -533,6 +533,9 @@ article.type-system-serif {
   padding: 1em;
   font-family: "Merriweather", serif;
   text-align: left; }
+  article.type-system-serif .non-repeat-image .featured {
+    visibility: hidden;
+    display: none; }
   article.type-system-serif::after {
     clear: both;
     content: "";

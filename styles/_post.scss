@@ -1,4 +1,4 @@
-.image-gradient-dynamic {
+.featured {
   $image-gradient-color-top: red; 
   $transparency-top: 0.9;
   $image-gradient-color-bottom: green; 
@@ -77,14 +77,13 @@ article.type-system-serif {
 
   padding: 1em;
 
-  
-  // @include media($medium-screen) {
-  //   @include span-columns(6);
-  // }
+  .non-repeat-image {
+    .featured {
+      visibility: hidden;
+      display: none;
+    }
+  }
 
-  // @include media($large-screen) {
-  //   @include span-columns(6);
-  // }
 
   @include clearfix;
   font-family: $serif-2;
