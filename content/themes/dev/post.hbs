@@ -20,8 +20,12 @@
   <img src="{{image}}" alt="">
   <div class="overlay"></div>
   <div class="copy">
-    <p class="type">{{post_class}}</p>
     <h1 class="post-title">{{title}}</h1>
+    <p class="post-meta date">
+      <time 
+      datetime="{{date format='YYYY-MM-DD'}}">
+      {{date format="DD MMMM YYYY"}}</time>
+    </p>
   </div>
 </div>
 

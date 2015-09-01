@@ -9,6 +9,7 @@
   $image-gradient-color-right: yellow; 
   $transparency-right: 0.8;
   $horizontal-angle: 90deg;
+  $serif: 'Lusitana', serif;
   
   line-height: 0;
   position: relative;
@@ -30,6 +31,14 @@
     text-align: center;
     top: 50%;
     z-index: 999;
+
+    h1 {
+      color: white;
+      font-family: $serif;
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
 
     p {
       color: white;

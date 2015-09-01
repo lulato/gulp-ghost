@@ -502,6 +502,12 @@ header.navigation {
     text-align: center;
     top: 50%;
     z-index: 999; }
+    .featured .copy h1 {
+      color: white;
+      font-family: "Lusitana", serif;
+      font-size: 2em;
+      font-weight: 700;
+      margin-bottom: 0.5em; }
     .featured .copy p {
       color: white;
       line-height: 1.5em;
