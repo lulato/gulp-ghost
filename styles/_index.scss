@@ -4,6 +4,32 @@
   
 }
 
+.articles {
+  $medium-screen: em(640) !default;
+  $large-screen: em(860);
+  @include media($medium-screen) {
+    @include span-columns(8);
+  }
+
+  @include media($large-screen) {
+    @include span-columns(8);
+  }
+}
+
+.sidebar {
+  $medium-screen: em(640) !default;
+  $large-screen: em(860);
+  @include media($medium-screen) {
+    @include span-columns(4);
+  }
+
+  @include media($large-screen) {
+    @include span-columns(4);
+  }
+}
+
+
+
 .tags {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 0.8em;

@@ -212,6 +212,42 @@ picture {
     content: "";
     display: table; }
 
+@media screen and (min-width: 40em) {
+  .articles {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .articles:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 53.75em) {
+  .articles {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .articles:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 40em) {
+  .sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .sidebar:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 53.75em) {
+  .sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .sidebar:last-child {
+      margin-right: 0; } }
+
 .tags {
   font-family: "Merriweather Sans", sans-serif;
   font-size: 0.8em;
@@ -444,26 +480,59 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
+.image-gradient-dynamic {
+  line-height: 0;
+  position: relative;
+  width: 100%; }
+  .image-gradient-dynamic img {
+    height: auto;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%; }
+  .image-gradient-dynamic .copy {
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    z-index: 999; }
+    .image-gradient-dynamic .copy p {
+      color: white;
+      line-height: 1.5em;
+      padding: 1em 2em;
+      position: relative; }
+  .image-gradient-dynamic .overlay {
+    background-color: rgba(255, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(-270deg, rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4));
+    background-image: linear-gradient(0deg,rgba(255, 0, 0, 0.1), rgba(0, 128, 0, 0.4), , , , , , , , );
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px; }
+    .image-gradient-dynamic .overlay:after {
+      background-color: rgba(0, 128, 128, 0.2);
+      background-image: -webkit-linear-gradient(-360deg, rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2));
+      background-image: linear-gradient(90deg,rgba(0, 128, 128, 0.2), rgba(255, 255, 0, 0.2), , , , , , , , );
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      content: '';
+      display: block; }
+
 article.type-system-serif {
   padding: 1em;
   font-family: "Merriweather", serif;
   text-align: left; }
-  @media screen and (min-width: 40em) {
-    article.type-system-serif {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%; }
-      article.type-system-serif:last-child {
-        margin-right: 0; } }
-  @media screen and (min-width: 53.75em) {
-    article.type-system-serif {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%; }
-      article.type-system-serif:last-child {
-        margin-right: 0; } }
   article.type-system-serif::after {
     clear: both;
     content: "";
@@ -652,14 +721,6 @@ article.type-system-serif {
   -o-justify-content: space-between;
   justify-content: space-between;
   -ms-flex-pack: justify; }
-  @media screen and (min-width: 40em) {
-    .cards {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 100%; }
-      .cards:last-child {
-        margin-right: 0; } }
 
 .card {
   -webkit-flex-basis: 15em;
@@ -680,14 +741,6 @@ article.type-system-serif {
   cursor: pointer;
   margin: 0 1em 1.5em 1em;
   position: relative; }
-  @media screen and (min-width: 40em) {
-    .card {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 31.76157%; }
-      .card:last-child {
-        margin-right: 0; } }
   .card .card-image {
     overflow: hidden;
     height: 150px;

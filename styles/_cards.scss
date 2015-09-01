@@ -4,9 +4,9 @@
   @include display(flex);
   @include flex-wrap(wrap);
   @include justify-content(space-between);
-  @include media($medium-screen) {
-    @include span-columns(12);
-  }
+  // @include media($medium-screen) {
+  //   @include span-columns(10);
+  // }
 }
 
 .card {
@@ -28,9 +28,9 @@
   $medium-screen: em(640) !default;
   $large-screen: em(860);
 
-  @include media($medium-screen) {
-    @include span-columns(4);
-  }
+  // @include media($medium-screen) {
+  //   @include span-columns(4);
+  // }
 
   @include flex-basis(15em);
   @include flex-grow(1);

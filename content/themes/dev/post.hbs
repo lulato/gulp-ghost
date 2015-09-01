@@ -6,12 +6,24 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+<header class="main-header post-head {{#if image}}" 
+        style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+
+{{!--     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
         <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
         <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
-    </nav>
+    </nav> --}}
 </header>
+
+
+<div class="image-gradient-dynamic">
+  <img src="{{image}}" alt="">
+  <div class="overlay"></div>
+  <div class="copy">
+    <p class="type">{{post_class}}</p>
+    <h1 class="post-title">{{title}}</h1>
+  </div>
+</div>
 
 
 
