@@ -661,6 +661,21 @@ article.type-system-serif {
     font-family: "Merriweather", serif;
     font-style: italic; }
 
+.author-footer {
+  display: table;
+  width: 100%; }
+  .author-footer h4 {
+    margin-bottom: 0; }
+  .author-footer .bio {
+    padding: 6px; }
+  .author-footer .author-image img {
+    display: block;
+    width: 5em;
+    border-radius: 100%; }
+  .author-footer .author-image, .author-footer .bio {
+    display: table-cell;
+    vertical-align: top; }
+
 .footer-2 {
   background: #c82f25;
   padding: 1.5em;

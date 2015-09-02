@@ -249,3 +249,27 @@ article.type-system-serif {
   }
 }
 
+
+.author-footer {
+  // background-color: #c1c1c1;
+  display: table;
+  width: 100%;
+
+  h4 {
+    margin-bottom: 0;
+  }
+  .bio {
+    padding: 6px;
+  }
+  .author-image {
+    img {
+      display: block;
+      width: 5em;
+      border-radius: 100%;
+    }
+  }
+  .author-image, .bio {
+    display: table-cell;
+    vertical-align: top;
+  }
+}

@@ -79,31 +79,29 @@
 
       {{! Everything inside the #author tags pulls data from the author }}
       {{#author}}
-          
-          {{#if image}}
+          <section class="author author-footer">
+            {{#if image}}
+            <figure class="author-image">
+                <img src="{{image}}" alt="{{name}}'s Picture">
+{{!--                 <a class="img" href="{{url}}" style="background-image: url({{image}})">
+                  <span class="hidden">{{name}}'s Picture</span>
+                </a> --}}
+            </figure>
+            {{/if}}
+            <div class="bio">
+            <h4><a href="{{url}}">{{name}}</a></h4>
 
-          <figure class="author-image">
-              <a class="img" href="{{url}}" style="background-image: url({{image}})">
-                <span class="hidden">{{name}}'s Picture</span>
-              </a>
-          </figure>
-          {{/if}}
-
-          <section class="author">
-
-              <h4><a href="{{url}}">{{name}}</a></h4>
-
-              {{#if bio}}
-                  <p>{{bio}}</p>
-              {{else}}
-                  <p>Read <a href="{{url}}">more posts</a> by this author.</p>
-              {{/if}}
-
+            {{#if bio}}
+                <p>{{bio}}</p>
+            {{else}}
+                <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+            {{/if}}
+            </div>
           </section>
 
       {{/author}}
 
-          {{> social}}
+         {{!--  {{> social}} --}}
 
         <ul class="related-posts">
         </ul>
