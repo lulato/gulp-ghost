@@ -505,7 +505,7 @@ header.navigation {
     .featured .copy h1 {
       color: white;
       font-family: "Lusitana", serif;
-      font-size: 2em;
+      font-size: 2.6em;
       font-weight: 700;
       margin-bottom: 0.5em; }
     .featured .copy p {
@@ -534,6 +534,24 @@ header.navigation {
       left: 0px;
       content: '';
       display: block; }
+
+@media screen and (min-width: 40em) {
+  .main-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .main-column:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 53.75em) {
+  .main-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%; }
+    .main-column:last-child {
+      margin-right: 0; } }
 
 article.type-system-serif {
   padding: 1em;

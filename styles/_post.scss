@@ -35,7 +35,7 @@
     h1 {
       color: white;
       font-family: $serif;
-      font-size: 2em;
+      font-size: 2.6em;
       font-weight: 700;
       margin-bottom: 0.5em;
     }
@@ -68,6 +68,19 @@
 
 // -------------------------------
 
+.main-column {
+  $medium-screen: em(640) !default;
+  $large-screen: em(860);
+  @include media($medium-screen) {
+    @include span-columns(8);
+  }
+
+  @include media($large-screen) {
+    @include span-columns(8);
+  }
+}
+
+
 article.type-system-serif {
   $base-border-radius: 3px !default;
   $base-line-height: 1.5em !default;
@@ -93,6 +106,7 @@ article.type-system-serif {
       display: none;
     }
   }
+
 
 
   @include clearfix;
