@@ -584,10 +584,11 @@ article.type-system-serif {
     font-family: "Merriweather Sans", sans-serif;
     font-size: 0.7em;
     font-weight: 700;
-    margin-bottom: 2em;
     padding: 0.3em 0;
     text-align: left;
     text-transform: uppercase; }
+    article.type-system-serif .type a {
+      color: black; }
   article.type-system-serif h1 {
     font-family: "Lusitana", serif;
     font-size: 2em;

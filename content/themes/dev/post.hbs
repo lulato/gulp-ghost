@@ -37,14 +37,13 @@
 
 
       <header>
-        <p class="type">{{post_class}}</p>
+        <p class="type">{{tags separator=" | "}}</p>
         <h1 class="post-title">{{title}}</h1>
 
         <p class="post-meta date">
             <time 
             datetime="{{date format='YYYY-MM-DD'}}">
             {{date format="DD MMMM YYYY"}}</time> 
-            {{tags prefix=" on "}}
         </p>
 
 {{!--         <section class="post-meta">
@@ -80,11 +79,8 @@
 
       {{! Everything inside the #author tags pulls data from the author }}
       {{#author}}
-          <p> <a class="author" href="{{url}}">{{name}}</a></p>
           
           {{#if image}}
-
-{{!--             <a href="{{url}}"><img src="{{image}}" alt="{{name}}'s Picture"></a> --}}
 
           <figure class="author-image">
               <a class="img" href="{{url}}" style="background-image: url({{image}})">
@@ -102,10 +98,7 @@
               {{else}}
                   <p>Read <a href="{{url}}">more posts</a> by this author.</p>
               {{/if}}
-              <div class="author-meta">
-                  {{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-                  {{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-              </div>
+
           </section>
 
       {{/author}}
