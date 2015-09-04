@@ -205,30 +205,31 @@ picture {
 .content {
   max-width: 68em;
   margin-left: auto;
-  margin-right: auto;
-  margin-top: 1em; }
+  margin-right: auto; }
   .content::after {
     clear: both;
     content: "";
     display: table; }
 
-@media screen and (min-width: 40em) {
-  .articles {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .articles:last-child {
-      margin-right: 0; } }
-
-@media screen and (min-width: 53.75em) {
-  .articles {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%; }
-    .articles:last-child {
-      margin-right: 0; } }
+.articles {
+  padding-top: 1em;
+  background-color: #c1c1c1; }
+  @media screen and (min-width: 40em) {
+    .articles {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      .articles:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 53.75em) {
+    .articles {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%; }
+      .articles:last-child {
+        margin-right: 0; } }
 
 @media screen and (min-width: 40em) {
   .sidebar {
