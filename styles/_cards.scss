@@ -23,7 +23,7 @@
   $card-header-background: $card-background;
   $card-margin: 0.5em;
   $card-image-hover-opacity: 0.7;
-  $card-image-hover-color: #F8F2B4;
+  $card-image-hover-color: #c1c1c1;
 
   $medium-screen: em(640) !default;
   $large-screen: em(860);
@@ -38,10 +38,11 @@
   background-color: $card-background;
   border-radius: $base-border-radius;
   border: $card-border;
-  box-shadow: 0 2px 4px darken($base-background-color, 10%);
+  // box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
   margin: 0 $card-margin $base-spacing $card-margin;
   position: relative;
+
 
 
   .card-image {
@@ -68,6 +69,10 @@
     font-size: 1.3em;
     line-height: 1.5em;
     padding: ($base-spacing / 3) ($base-spacing / 2);
+
+    a {
+      color: black;
+    }
   }
 
   .card-copy {
@@ -77,6 +82,14 @@
 
     p {
       margin: 0 0 ($base-spacing / 2);
+    }
+    .tags a {
+      $badge-font-size: 0.85em;
+      background-color: #CE8929;
+      border-radius: $badge-font-size * 2;
+      font-size: $badge-font-size;
+      color: white;
+      padding: 0.4em 1em;
     }
   }
 
@@ -96,4 +109,44 @@
       background-color: $card-background;
     }
   }
+}
+
+
+
+//  this is for the tags in the cards
+$badge-font-size: 0.75em !default;
+$main-gold: #CE8929 !default;
+$alert-color: #fff6bf !default;
+$error-color: #fbe3e4 !default;
+$notice-color: #e5edf8 !default;
+$success-color: #e6efc2 !default;
+
+@mixin badge($color: $main-gold) {
+  background-color: $color;
+  border-radius: $badge-font-size * 2;
+  color: white;
+  display: inline-block;
+  font-size: $badge-font-size;
+  line-height: 1;
+  padding: 0.4em 1.2em;
+}
+
+.badge {
+  @include badge;
+}
+
+.badge-alert {
+  @include badge($alert-color);
+}
+
+.badge-error {
+  @include badge($error-color);
+}
+
+.badge-notice {
+  @include badge($notice-color);
+}
+
+.badge-success {
+  @include badge($success-color);
 }

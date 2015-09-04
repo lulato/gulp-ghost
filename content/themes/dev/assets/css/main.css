@@ -817,7 +817,6 @@ article.type-system-serif {
   background-color: #f7f7f7;
   border-radius: 3px;
   border: 1px solid #ddd;
-  box-shadow: 0 2px 4px #e6e6e6;
   cursor: pointer;
   margin: 0 0.5em 1.5em 0.5em;
   position: relative; }
@@ -825,7 +824,7 @@ article.type-system-serif {
     overflow: hidden;
     height: 220px;
     max-height: 220px;
-    background-color: #F8F2B4; }
+    background-color: #c1c1c1; }
     .card .card-image img {
       -webkit-transition: all 0.2s ease-in-out;
       -moz-transition: all 0.2s ease-in-out;
@@ -845,12 +844,20 @@ article.type-system-serif {
     font-size: 1.3em;
     line-height: 1.5em;
     padding: 0.5em 0.75em; }
+    .card .card-header a {
+      color: black; }
   .card .card-copy {
     font-size: 0.9em;
     line-height: 1.5em;
     padding: 0.75em 0.75em; }
     .card .card-copy p {
       margin: 0 0 0.75em; }
+    .card .card-copy .tags a {
+      background-color: #CE8929;
+      border-radius: 1.7em;
+      font-size: 0.85em;
+      color: white;
+      padding: 0.4em 1em; }
   .card:focus,
   .card:hover {
     cursor: pointer; }
@@ -861,6 +868,51 @@ article.type-system-serif {
     background-color: #f7f7f7; }
     .card:active .card-header {
       background-color: #f7f7f7; }
+
+.badge {
+  background-color: #CE8929;
+  border-radius: 1.5em;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em; }
+
+.badge-alert {
+  background-color: #fff6bf;
+  border-radius: 1.5em;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em; }
+
+.badge-error {
+  background-color: #fbe3e4;
+  border-radius: 1.5em;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em; }
+
+.badge-notice {
+  background-color: #e5edf8;
+  border-radius: 1.5em;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em; }
+
+.badge-success {
+  background-color: #e6efc2;
+  border-radius: 1.5em;
+  color: white;
+  display: inline-block;
+  font-size: 0.75em;
+  line-height: 1;
+  padding: 0.4em 1.2em; }
 
 .author-image {
   box-sizing: border-box;

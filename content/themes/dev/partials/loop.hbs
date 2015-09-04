@@ -29,10 +29,12 @@
     <div class="card-image">
       <img src="{{image}}" alt="">
     </div>
-    <div class="card-header">{{{title}}}</div>
+    <div class="card-header">
+      <a href="{{url}}">{{{title}}}</a>
+    </div>
 
     <div class="card-copy">
-      <span class="tags post-meta">{{tags}}</span>
+      <span class="tags post-meta">{{tags separator=" "}}</span>
     </div>
   </div>
 </a>
