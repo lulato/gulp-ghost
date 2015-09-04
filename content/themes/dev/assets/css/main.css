@@ -213,7 +213,7 @@ picture {
 
 .articles {
   padding-top: 1em;
-  background-color: #c1c1c1; }
+  background-color: #EEEEEE; }
   @media screen and (min-width: 40em) {
     .articles {
       float: left;
@@ -815,7 +815,7 @@ article.type-system-serif {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  background-color: #f7f7f7;
+  background-color: white;
   border-radius: 3px;
   border: 1px solid #ddd;
   cursor: pointer;
@@ -838,7 +838,7 @@ article.type-system-serif {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    background-color: #f7f7f7;
+    background-color: white;
     border-bottom: 1px solid #ddd;
     border-radius: 3px 3px 0 0;
     font-weight: 800;
@@ -866,9 +866,9 @@ article.type-system-serif {
     .card:hover img {
       opacity: 0.7; }
   .card:active {
-    background-color: #f7f7f7; }
+    background-color: white; }
     .card:active .card-header {
-      background-color: #f7f7f7; }
+      background-color: white; }
 
 .badge {
   background-color: #CE8929;

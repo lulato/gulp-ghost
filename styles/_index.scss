@@ -6,7 +6,7 @@
 
 .articles {
   padding-top: 1em;
-  background-color: #c1c1c1;
+  background-color: #EEEEEE;
   $medium-screen: em(640) !default;
   $large-screen: em(860);
   @include media($medium-screen) {
