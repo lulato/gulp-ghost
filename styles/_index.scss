@@ -7,15 +7,14 @@
 .articles {
   padding-top: 1em;
   background-color: #EEEEEE;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860);
-  @include media($medium-screen) {
-    @include span-columns(8);
-  }
-
-  @include media($large-screen) {
-    @include span-columns(8);
-  }
+  // $medium-screen: em(640) !default;
+  // $large-screen: em(860);
+  // @include media($medium-screen) {
+  //   @include span-columns(8);
+  // }
+  // @include media($large-screen) {
+  //   @include span-columns(8);
+  // }
 }
 
 .sidebar {
@@ -53,7 +52,10 @@
   $pagination-hover-background: lighten($pagination-background, 5);
   $pagination-color: $base-font-color;
 
+  @include span-columns(12);
+
   text-align: center;
+  margin-bottom: 1.5em;
 
   ul {
     display: inline;
