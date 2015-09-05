@@ -808,10 +808,25 @@ article.type-system-serif {
   transition: all 0.2s ease-in-out;
   background-color: white;
   border-radius: 3px;
-  border: 1px solid #ddd;
   cursor: pointer;
   margin: 0 0.5em 1.5em 0.5em;
   position: relative; }
+  @media screen and (min-width: 40em) {
+    .card {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 57.35098%; }
+      .card:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 53.75em) {
+    .card {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .card:last-child {
+        margin-right: 0; } }
   .card .card-image {
     overflow: hidden;
     height: 220px;
