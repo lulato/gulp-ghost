@@ -40,11 +40,7 @@
         <p class="type">{{tags separator=" | "}}</p>
         <h1 class="post-title">{{title}}</h1>
 
-        <p class="post-meta date">
-            <time 
-            datetime="{{date format='YYYY-MM-DD'}}">
-            {{date format="DD MMMM YYYY"}}</time> 
-        </p>
+
 
 {{!--         <section class="post-meta">
             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
@@ -53,11 +49,6 @@
       </header>
 
 
-
-      {{#author}}
-        <p> <a class="author" href="{{url}}">{{name}}</a></p>
-      {{/author}}
-
       {{!-- Image --}}
       {{#if image}}
       <div class="non-repeat-image">
@@ -65,6 +56,16 @@
       </div>
       {{/if}}
 
+      {{#author}}
+        <p> <a class="author" href="{{url}}">{{name}}</a></p>
+      {{/author}}
+        <p class="post-meta date">
+            <time 
+            datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="DD MMMM YYYY"}}</time> 
+        </p>
+
+        
 {{!--       <h2>{{excerpt words="26"}}</h2>
       <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
  --}}
