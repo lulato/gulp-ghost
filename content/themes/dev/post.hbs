@@ -136,12 +136,14 @@
       <a href="{{url}}">{{{title}}}</a>
     </div>
 
-
-
+    <div class="card-copy">
+      <span class="tags post-meta">{{tags separator=" "}}</span>
+    </div>
+    </a>
   </div>
+
     {{/next_post}}
     {{#prev_post}}
-
   <div class="card">
   <a href="{{url}}">
     <div class="card-image">
@@ -150,6 +152,12 @@
     <div class="card-header">
       <a href="{{url}}">{{{title}}}</a>
     </div>
+
+    <div class="card-copy">
+      <span class="tags post-meta">{{tags separator=" "}}</span>
+    </div>
+    </a>
+  </div>
       
     {{/prev_post}}
 

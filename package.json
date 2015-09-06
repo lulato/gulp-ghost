@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.8.2",
-    "ghost": "^0.6.4",
+    "ghost": "^0.7.0",
     "gulp": "^3.9.0",
     "gulp-bower-normalize": "^1.0.6",
     "gulp-sass": "^2.0.4",
