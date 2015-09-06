@@ -46,9 +46,6 @@
             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
         </section> --}}
 
-      </header>
-
-
       {{!-- Image --}}
       {{#if image}}
       <div class="non-repeat-image">
@@ -57,7 +54,8 @@
       {{/if}}
 
       {{#author}}
-        <p> <a class="author" href="{{url}}">{{name}}</a></p>
+        <a class="author" href="{{url}}">{{name}}</a>
+
       {{/author}}
         <p class="post-meta date">
             <time 
@@ -65,7 +63,13 @@
             {{date format="DD MMMM YYYY"}}</time> 
         </p>
 
-        
+
+      </header>
+
+
+
+
+
 {{!--       <h2>{{excerpt words="26"}}</h2>
       <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
  --}}

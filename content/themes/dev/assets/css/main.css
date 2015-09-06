@@ -589,6 +589,8 @@ article.type-system-serif {
   article.type-system-serif .non-repeat-image .featured {
     visibility: hidden;
     display: none; }
+  article.type-system-serif .author {
+    margin-bottom: 0; }
   article.type-system-serif::after {
     clear: both;
     content: "";
