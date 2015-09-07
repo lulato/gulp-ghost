@@ -1,0 +1,54 @@
+{{! This is the post loop - each post will be output using this markup }}
+{{#foreach posts}}
+
+{{!--   <article class="type-system-serif">
+      <header class="post-header">
+          <h1><a href="{{url}}">{{{title}}}</a></h1>
+      </header>
+      <section class="post-excerpt">
+        <span class="tags post-meta">{{tags}}</span>
+        {{#if image}}
+          
+          <a href="{{url}}"><img src="{{image}}" alt=""></a>
+          
+        {{/if}}
+
+          <p>
+            {{excerpt words="26"}} 
+            <a href="{{url}}" class="read-more">Read More <span>&rsaquo;</span></a>
+          </p>
+      </section>
+
+
+  </article> --}}
+
+
+
+  <div class="card">
+  <a href="{{url}}">
+    <div class="card-image">
+      <img src="{{image}}" alt="">
+    </div>
+    <div class="card-header">
+      <a href="{{url}}">{{{title}}}</a>
+    </div>
+
+    <div class="card-copy">
+      <span class="tags post-meta">{{tags separator=" "}}</span>
+    </div>
+    </a>
+  </div>
+
+
+
+
+{{/foreach}}
+
+{{! Previous/next page links - displayed on every page }}
+
+{{pagination}}
+
+
+
+
+

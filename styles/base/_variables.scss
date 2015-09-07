@@ -1,7 +1,8 @@
 // Typography
-$base-font-family: 'Lato', $helvetica;
+$serif: 'Garamond', serif;
+$sans-serif: 'Montserrat', $helvetica;
+$base-font-family: $sans-serif;
 $heading-font-family: $base-font-family;
-$serif: 'Lusitana', serif;
 
 // Font Sizes
 $base-font-size: 1em;

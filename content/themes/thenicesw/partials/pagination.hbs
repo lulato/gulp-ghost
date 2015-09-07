@@ -1,0 +1,32 @@
+{{!-- <nav class="pagination" role="navigation">
+    {{#if prev}}
+        <a class="newer-posts" href="{{page_url prev}}">&larr; Newer Posts</a>
+    {{/if}}
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    {{#if next}}
+        <a class="older-posts" href="{{page_url next}}">Older Posts &rarr;</a>
+    {{/if}}
+</nav> --}}
+
+<div class="pagination">
+  <ul>
+    {{#if prev}}
+    <li class="page-prev"><a href="{{page_url prev}}">Prev</a></li>
+    {{/if}}
+    <span class="page-number">Page {{page}} of {{pages}}</span>
+    <li>
+{{!--       <ul>
+        <li><a href="javascript:void(0)">1</a></li>
+        <li><a href="javascript:void(0)">2</a></li>
+        <li><a href="javascript:void(0)">3</a></li>
+        <li><a href="javascript:void(0)">4</a></li>
+        <li><a href="javascript:void(0)">5</a></li>
+        <li><a href="javascript:void(0)">6</a></li>
+        <li><a href="javascript:void(0)">7</a></li>
+      </ul> --}}
+    </li>
+    {{#if next}}
+    <li class="page-next"><a href="{{page_url next}}">Next</a></li>
+    {{/if}}
+  </ul>
+</div>

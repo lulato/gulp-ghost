@@ -533,7 +533,7 @@ header.navigation {
     z-index: 999; }
     .featured .copy h1 {
       color: white;
-      font-family: "Lusitana", serif;
+      font-family: "Montserrat", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       font-size: 2.6em;
       font-weight: 700;
       margin-bottom: 0.5em; }
@@ -584,7 +584,7 @@ header.navigation {
 
 article.type-system-serif {
   padding: 1em;
-  font-family: "Merriweather", serif;
+  font-family: "Montserrat", sans-serif;
   text-align: left; }
   article.type-system-serif .non-repeat-image .featured {
     visibility: hidden;
@@ -612,7 +612,7 @@ article.type-system-serif {
   article.type-system-serif .type {
     border-bottom: 1px solid;
     display: inline-block;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.7em;
     font-weight: 700;
     padding: 0.3em 0;
@@ -621,7 +621,7 @@ article.type-system-serif {
     article.type-system-serif .type a {
       color: black; }
   article.type-system-serif h1 {
-    font-family: "Lusitana", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.5em; }
@@ -633,7 +633,7 @@ article.type-system-serif {
       article.type-system-serif h1 {
         font-size: 2.6em; } }
   article.type-system-serif h2 {
-    font-family: "Merriweather", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1em;
     font-style: italic;
     font-weight: 400;
@@ -652,35 +652,36 @@ article.type-system-serif {
     padding: 0.1em 0.4em;
     white-space: nowrap; }
   article.type-system-serif h3 {
-    font-family: "Lusitana", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
     margin-bottom: .4em; }
   article.type-system-serif p.date {
     color: rgba(51, 51, 51, 0.4);
-    font-family: "Merriweather", serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em; }
   article.type-system-serif p {
-    font-family: "Merriweather", serif;
+    font-family: "Lato", "Montserrat", sans-serif;
+    font-weight: 400;
     font-size: 0.9em;
-    line-height: 1.6em;
+    line-height: 1.7em;
     margin-bottom: 1.5em; }
     article.type-system-serif p span {
-      font-family: "Merriweather Sans", sans-serif;
+      font-family: "Montserrat", sans-serif;
       font-weight: 700; }
   article.type-system-serif a.read-more {
     display: inline-block;
-    font-family: "Merriweather Sans", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 0.8em;
     font-weight: 700;
     margin-left: 0.2em;
     position: relative;
     text-transform: uppercase; }
     article.type-system-serif a.read-more span {
-      font-family: "Lusitana", serif;
+      font-family: "Garamond", serif;
       font-size: 1.5em;
       font-style: normal;
       position: absolute;
@@ -706,6 +707,9 @@ article.type-system-serif {
   .author-footer .author-image, .author-footer .bio {
     display: table-cell;
     vertical-align: top; }
+
+.related-posts {
+  margin: 1em 0 1em 0; }
 
 .footer-2 {
   background: #c82f25;

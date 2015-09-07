@@ -1,0 +1,182 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<header class="main-header post-head {{#if image}}" 
+        style="background-image: url({{image}}){{else}}no-cover{{/if}}">
+
+{{!--     <nav class="main-nav {{#if image}}overlay{{/if}} clearfix">
+        <a class="back-button icon-arrow-left" href="{{@blog.url}}">Home</a>
+        <a class="subscribe-button icon-feed" href="{{@blog.url}}/rss/">Subscribe</a>
+    </nav> --}}
+</header>
+
+
+<div class="{{post_class}} hidden image-gradient-dynamic">
+  <img src="{{image}}" alt="">
+  <div class="overlay"></div>
+  <div class="copy">
+    <h1 class="post-title">{{title}}</h1>
+    <p class="post-meta date">
+      <time 
+      datetime="{{date format='YYYY-MM-DD'}}">
+      {{date format="DD MMMM YYYY"}}</time>
+    </p>
+  </div>
+</div>
+
+
+
+<main class="content" role="main">
+  <div class="main-column">
+    <article class="type-system-serif">
+
+
+      <header>
+        <p class="type">{{tags separator=" | "}}</p>
+        <h1 class="post-title">{{title}}</h1>
+
+
+
+{{!--         <section class="post-meta">
+            <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+        </section> --}}
+
+      {{!-- Image --}}
+      {{#if image}}
+      <div class="non-repeat-image">
+        <img class="{{post_class}}" src="{{image}}" alt="img">
+      </div>
+      {{/if}}
+
+      {{#author}}
+        <a class="author" href="{{url}}">{{name}}</a>
+
+      {{/author}}
+        <p class="post-meta date">
+            <time 
+            datetime="{{date format='YYYY-MM-DD'}}">
+            {{date format="DD MMMM YYYY"}}</time> 
+        </p>
+
+
+      </header>
+
+
+
+
+
+{{!--       <h2>{{excerpt words="26"}}</h2>
+      <p class="date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</p>
+ --}}
+      <section class="post-content">
+          {{content}}
+      </section>
+      <hr>
+
+
+
+      <footer class="post-footer">
+
+      {{! Everything inside the #author tags pulls data from the author }}
+      {{#author}}
+          <section class="author author-footer">
+            {{#if image}}
+            <figure class="author-image">
+                <img src="{{image}}" alt="{{name}}'s Picture">
+{{!--                 <a class="img" href="{{url}}" style="background-image: url({{image}})">
+                  <span class="hidden">{{name}}'s Picture</span>
+                </a> --}}
+            </figure>
+            {{/if}}
+            <div class="bio">
+            <h4><a href="{{url}}">{{name}}</a></h4>
+
+            {{#if bio}}
+                <p>{{bio}}</p>
+            {{else}}
+                <p>Read <a href="{{url}}">more posts</a> by this author.</p>
+            {{/if}}
+            </div>
+          </section>
+
+      {{/author}}
+
+         {{!--  {{> social}} --}}
+         <div class="ad">
+           <img src="http://www.iab.net/media/image/300x250_uap.gif" />
+         </div>
+        
+        <ul class="related-posts">
+          <h3>Related Posts</h1>
+        </ul>
+
+      
+
+      </footer>
+
+    </article>
+
+
+    <article class="{{post_class}}">
+
+
+    </article>
+
+
+<aside class="cards read-next">
+
+
+
+    {{#next_post}}
+  <div class="card">
+  <a href="{{url}}">
+    <div class="card-image">
+      <img src="{{image}}" alt="">
+    </div>
+    <div class="card-header">
+      <a href="{{url}}">{{{title}}}</a>
+    </div>
+
+    <div class="card-copy">
+      <span class="tags post-meta">{{tags separator=" "}}</span>
+    </div>
+    </a>
+  </div>
+
+    {{/next_post}}
+    {{#prev_post}}
+  <div class="card">
+  <a href="{{url}}">
+    <div class="card-image">
+      <img src="{{image}}" alt="">
+    </div>
+    <div class="card-header">
+      <a href="{{url}}">{{{title}}}</a>
+    </div>
+
+    <div class="card-copy">
+      <span class="tags post-meta">{{tags separator=" "}}</span>
+    </div>
+    </a>
+  </div>
+      
+    {{/prev_post}}
+
+</aside>
+
+
+</main>
+
+
+
+
+
+</div>
+
+
+{{/post}}

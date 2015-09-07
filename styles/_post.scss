@@ -34,7 +34,7 @@
 
     h1 {
       color: white;
-      font-family: $serif;
+      font-family: $sans-serif;
       font-size: 2.6em;
       font-weight: 700;
       margin-bottom: 0.5em;
@@ -93,9 +93,8 @@ article.type-system-serif {
   $large-screen: em(860);
 
   $base-font-color: $dark-gray !default;
-  $serif: 'Lusitana', serif;
   $serif-2: 'Merriweather', serif;
-  $sans-serif: 'Merriweather Sans', sans-serif;
+  $sans-serif: 'Montserrat', sans-serif;
 
   padding: 1em;
 
@@ -113,7 +112,7 @@ article.type-system-serif {
 
 
   @include clearfix;
-  font-family: $serif-2;
+  font-family: $sans-serif;
   text-align: left;
   
   h1, h2, h3, p {
@@ -129,6 +128,7 @@ article.type-system-serif {
   }
 
   p {
+
     color: $base-font-color;
     line-height: $base-line-height;
   }
@@ -154,7 +154,7 @@ article.type-system-serif {
   }
 
   h1 {
-    font-family: $serif;
+    font-family: $sans-serif;
     font-size: 2em;
     font-weight: 700;
     margin-bottom: 0.5em;
@@ -172,7 +172,7 @@ article.type-system-serif {
   }
 
   h2 {
-    font-family: $serif-2;
+    font-family: $sans-serif;
     font-size: 1em;
     font-style: italic;
     font-weight: 400;
@@ -196,7 +196,7 @@ article.type-system-serif {
   }
 
   h3 {
-    font-family: $serif;
+    font-family: $sans-serif;
     font-size: 1.4em;
     font-weight: 400;
     line-height: 1.3em;
@@ -205,16 +205,17 @@ article.type-system-serif {
 
   p.date {
     color: transparentize($base-font-color, .6);
-    font-family: $serif-2;
+    font-family: $sans-serif;
     font-size: 0.9em;
     font-style: italic;
     margin-bottom: 0.3em;
   }
 
   p {
-    font-family: $serif-2;
+    font-family: 'Lato',$sans-serif;
+    font-weight: 400;
     font-size: 0.9em;
-    line-height: 1.6em;
+    line-height: 1.7em;
     margin-bottom: 1.5em;
 
     span {
@@ -278,6 +279,7 @@ article.type-system-serif {
 }
 
 
-// .read-next {
-//   @include outer-container;
-// }
+.related-posts {
+  margin: 1em 0 1em 0; 
+}
+

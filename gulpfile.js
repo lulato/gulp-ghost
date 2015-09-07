@@ -15,14 +15,14 @@ gulp.task('styles', function () {
         .pipe(sass({
             includePaths: ['styles'].concat(neat)
         }))
-        .pipe(gulp.dest('content/themes/dev/assets/css'));
+        .pipe(gulp.dest('content/themes/thenicesw/assets/css'));
         // .pipe(reload({stream:true}));
 });
 
 
 gulp.task('scripts', function() {
   return gulp.src('scripts/index.js')
-  .pipe(gulp.dest('content/themes/dev/assets/js'));
+  .pipe(gulp.dest('content/themes/thenicesw/assets/js'));
 });
 
 // watches 

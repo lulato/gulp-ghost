@@ -1,0 +1,34 @@
+
+{{!-- From bitters --}}
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="{{@blog.url}}" class="logo">
+      <img src="{{@blog.logo}}" alt="Logo Image">
+    </a>
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+
+      <ul id="js-navigation-menu" class="navigation-menu show">
+          {{#foreach navigation}}
+              <li class="nav-link nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+          {{/foreach}}
+        <li class="nav-link"><a href="{{@blog.url}}/rss/">Subscribe</a></li>
+
+      </ul>
+    </nav>
+
+{{!--     <div class="navigation-tools">
+      <div class="search-bar">
+
+        <form role="search">
+          <input type="search" placeholder="Enter Search" />
+          <button type="submit">
+            <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/search-icon.png" alt="Search Icon">
+          </button>
+        </form>
+
+      </div> <!-- end of search-bar -->
+    </div> <!-- end of navigation-tools --> --}}
+
+  </div>
+</header>
