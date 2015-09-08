@@ -7,6 +7,8 @@ var browserSync = require('browser-sync'); // Reloads the browser when I save.
 var reload = browserSync.reload;
 
 
+// let
+
 // this compiles sass bourbon and neat files
 gulp.task('styles', function () {
     // var bower = require('main-bower-files');
@@ -31,8 +33,16 @@ gulp.task("watch", function(){
     gulp.watch('styles/**/*.scss', ['styles']);
 });
 
+// let's build with browserSync
+
+gulp.task('browser-sync', function() {
+    browserSync({
+        proxy: "localhost:2368"
+    });
+});
+
 // this loads the ghost server
-gulp.task('ghost', ['styles', 'scripts','watch'], function() {  
+gulp.task('ghost', ['styles', 'scripts','browser-sync','watch'], function() {  
     var ghost = require('ghost');
     process.env.NODE_ENV = 'development';
     ghost({ config: __dirname + '/ghost-config.js' }).then(function (ghostServer) {
