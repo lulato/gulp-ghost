@@ -1,3 +1,15 @@
+
+
+.main-header {
+  height: 31vh;
+  background: #222 no-repeat center center;
+  background-size: cover;
+}
+
+.main-nav {
+  padding: 35px 40px;
+}
+
 .featured {
   $image-gradient-color-top: red; 
   $transparency-top: 0.9;
@@ -10,7 +22,12 @@
   $transparency-right: 0.8;
   $horizontal-angle: 90deg;
   
-  
+  // try this on image     height: 31vh;
+  // min-height: 180px;
+  // background-size: cover;
+  // background: #222 no-repeat center center;
+  // width: 100%;
+
   line-height: 0;
   position: relative;
   width: 100%;
@@ -79,6 +96,8 @@
     @include span-columns(8);
   }
 }
+
+
 
 
 article.type-system-serif {

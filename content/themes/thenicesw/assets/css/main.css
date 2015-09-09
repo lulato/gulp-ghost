@@ -509,6 +509,14 @@ header.navigation {
           box-sizing: border-box;
           display: block; } }
 
+.main-header {
+  height: 31vh;
+  background: #222 no-repeat center center;
+  background-size: cover; }
+
+.main-nav {
+  padding: 35px 40px; }
+
 .featured {
   line-height: 0;
   position: relative;
