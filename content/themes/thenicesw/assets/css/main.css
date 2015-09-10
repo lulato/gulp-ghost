@@ -512,7 +512,8 @@ header.navigation {
 .main-header {
   height: 31vh;
   background: #222 no-repeat center center;
-  background-size: cover; }
+  background-size: cover;
+  width: 100%; }
 
 .main-nav {
   padding: 35px 40px; }
