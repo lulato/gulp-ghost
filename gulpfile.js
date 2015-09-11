@@ -17,8 +17,8 @@ gulp.task('styles', function () {
         .pipe(sass({
             includePaths: ['styles'].concat(neat)
         }))
-        .pipe(gulp.dest('content/themes/thenicesw/assets/css'));
-        // .pipe(reload({stream:true}));
+        .pipe(gulp.dest('content/themes/thenicesw/assets/css'))
+        .pipe(reload({stream:true}));
 });
 
 

@@ -854,6 +854,7 @@ article.type-system-serif {
       transition: all 0.2s ease-in-out;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
+      height: 31vh;
       width: 100%;
       opacity: 1; }
   .card .card-header {
