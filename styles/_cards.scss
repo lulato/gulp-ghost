@@ -52,15 +52,17 @@
 
   .card-image {
     overflow: hidden;
-    height: 220px;
-    max-height: 220px;
+    height: 190px;
+    max-height: 200px;
     background-color: $card-image-hover-color;
 
     img {
       @include transition (all 0.2s ease-in-out);
       border-top-left-radius: $base-border-radius;
       border-top-right-radius: $base-border-radius;
-      height: 31vh;
+      min-height: 31vh;
+      background-size: cover;
+      // height: 31vh;
       width: 100%;
       opacity: 1;
     }

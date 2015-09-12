@@ -845,8 +845,8 @@ article.type-system-serif {
         margin-right: 0; } }
   .card .card-image {
     overflow: hidden;
-    height: 220px;
-    max-height: 220px;
+    height: 200px;
+    max-height: 200px;
     background-color: #c1c1c1; }
     .card .card-image img {
       -webkit-transition: all 0.2s ease-in-out;
@@ -854,7 +854,8 @@ article.type-system-serif {
       transition: all 0.2s ease-in-out;
       border-top-left-radius: 3px;
       border-top-right-radius: 3px;
-      height: 31vh;
+      min-height: 31vh;
+      background-size: cover;
       width: 100%;
       opacity: 1; }
   .card .card-header {
