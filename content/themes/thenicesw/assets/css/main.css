@@ -284,9 +284,9 @@ picture {
         background: #f7f7f7; }
 
 header.navigation {
-  background-color: #333;
-  border-bottom: 1px solid #1a1a1a;
-  min-height: 60px;
+  background-color: #c1c1c1;
+  border-bottom: 1px solid #a8a8a8;
+  min-height: 65px;
   width: 100%;
   z-index: 999; }
   header.navigation .navigation-wrapper {
@@ -305,17 +305,17 @@ header.navigation {
       display: table; }
   header.navigation .logo {
     float: left;
-    max-height: 60px;
+    max-height: 65px;
     padding-left: 1em;
     padding-right: 2em; }
     header.navigation .logo img {
-      max-height: 60px;
+      max-height: 65px;
       padding: 0.8em 0; }
   header.navigation .navigation-menu-button {
     color: rgba(255, 255, 255, 0.7);
     display: block;
     float: right;
-    line-height: 60px;
+    line-height: 65px;
     margin: 0;
     padding-right: 1em;
     text-decoration: none;
@@ -328,7 +328,7 @@ header.navigation {
       color: white; }
   header.navigation nav {
     float: none;
-    min-height: 60px;
+    min-height: 65px;
     z-index: 9999999; }
     @media screen and (min-width: 53.75em) {
       header.navigation nav {
@@ -350,9 +350,9 @@ header.navigation {
         margin: 0;
         padding: 0; } }
   header.navigation ul li.nav-link {
-    background: #333;
+    background: #c1c1c1;
     display: block;
-    line-height: 60px;
+    line-height: 65px;
     overflow: hidden;
     padding-right: 0.8em;
     text-align: right;
@@ -362,7 +362,7 @@ header.navigation {
       header.navigation ul li.nav-link {
         background: transparent;
         display: inline;
-        line-height: 60px;
+        line-height: 65px;
         text-decoration: none;
         width: auto; } }
     header.navigation ul li.nav-link a {
@@ -437,7 +437,7 @@ header.navigation {
       padding-right: 0; }
       @media screen and (min-width: 53.75em) {
         header.navigation ul.submenu li {
-          line-height: 46.15385px; }
+          line-height: 50px; }
           header.navigation ul.submenu li:first-child > a {
             border-top-left-radius: 3px;
             border-top-right-radius: 3px; }
@@ -446,13 +446,13 @@ header.navigation {
             border-bottom-right-radius: 3px;
             padding-bottom: 0.7em; } }
       header.navigation ul.submenu li a {
-        background-color: #2b2b2b;
+        background-color: #b9b9b9;
         display: inline-block;
         text-align: right;
         width: 100%; }
         @media screen and (min-width: 53.75em) {
           header.navigation ul.submenu li a {
-            background-color: #333;
+            background-color: #c1c1c1;
             padding-left: 1em;
             text-align: left;
             width: 12em; } }
@@ -460,7 +460,7 @@ header.navigation {
     background: #505050;
     clear: both;
     display: block;
-    height: 60px; }
+    height: 65px; }
     @media screen and (min-width: 53.75em) {
       header.navigation .navigation-tools {
         background: transparent;
@@ -474,9 +474,9 @@ header.navigation {
       position: relative; }
       header.navigation .search-bar form input[type=search] {
         box-sizing: border-box;
-        background: #404040;
+        background: #cecece;
         border-radius: 6px;
-        border: 1px solid #262626;
+        border: 1px solid #b4b4b4;
         color: rgba(255, 255, 255, 0.7);
         font-size: 0.9em;
         font-style: italic;
@@ -487,7 +487,7 @@ header.navigation {
           header.navigation .search-bar form input[type=search] {
             width: 100%; } }
       header.navigation .search-bar form button[type=submit] {
-        background: #404040;
+        background: #cecece;
         border: none;
         bottom: 0.3em;
         left: auto;
