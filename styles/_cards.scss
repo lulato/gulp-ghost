@@ -41,7 +41,7 @@
   @include flex-grow(1);
   @include transition (all 0.2s ease-in-out);
   background-color: $card-background;
-  border-radius: $base-border-radius;
+  // border-radius: $base-border-radius;
   border: $card-border;
   // box-shadow: 0 2px 4px darken($base-background-color, 10%);
   cursor: pointer;
@@ -58,8 +58,8 @@
 
     img {
       @include transition (all 0.2s ease-in-out);
-      border-top-left-radius: $base-border-radius;
-      border-top-right-radius: $base-border-radius;
+      // border-top-left-radius: $base-border-radius;
+      // border-top-right-radius: $base-border-radius;
       min-height: 31vh;
       background-size: cover;
       // height: 31vh;
@@ -94,7 +94,7 @@
     .tags a {
       $badge-font-size: 0.85em;
       background-color: #CE8929;
-      border-radius: $badge-font-size * 2;
+      // border-radius: $badge-font-size * 2;
       font-size: $badge-font-size;
       color: white;
       padding: 0.4em 1em;
