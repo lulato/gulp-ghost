@@ -1,11 +1,19 @@
 
-
+// this needs to be moved
 .main-header {
   height: 31vh;
-  background: #222 no-repeat center center;
+  background: #a1a1a1 no-repeat center center;
   background-size: cover;
   width: 100%;
+
 }
+.vertical{
+    @include outer-container;
+    padding: 2em;
+}
+
+
+
 
 .main-nav {
   padding: 35px 40px;

@@ -511,9 +511,19 @@ header.navigation {
 
 .main-header {
   height: 31vh;
-  background: #222 no-repeat center center;
+  background: #a1a1a1 no-repeat center center;
   background-size: cover;
   width: 100%; }
+
+.vertical {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em; }
+  .vertical::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .main-nav {
   padding: 35px 40px; }
@@ -889,51 +899,6 @@ article.type-system-serif {
     background-color: white; }
     .card:active .card-header {
       background-color: white; }
-
-.badge {
-  background-color: #CE8929;
-  border-radius: 1.5em;
-  color: white;
-  display: inline-block;
-  font-size: 0.75em;
-  line-height: 1;
-  padding: 0.4em 1.2em; }
-
-.badge-alert {
-  background-color: #fff6bf;
-  border-radius: 1.5em;
-  color: white;
-  display: inline-block;
-  font-size: 0.75em;
-  line-height: 1;
-  padding: 0.4em 1.2em; }
-
-.badge-error {
-  background-color: #fbe3e4;
-  border-radius: 1.5em;
-  color: white;
-  display: inline-block;
-  font-size: 0.75em;
-  line-height: 1;
-  padding: 0.4em 1.2em; }
-
-.badge-notice {
-  background-color: #e5edf8;
-  border-radius: 1.5em;
-  color: white;
-  display: inline-block;
-  font-size: 0.75em;
-  line-height: 1;
-  padding: 0.4em 1.2em; }
-
-.badge-success {
-  background-color: #e6efc2;
-  border-radius: 1.5em;
-  color: white;
-  display: inline-block;
-  font-size: 0.75em;
-  line-height: 1;
-  padding: 0.4em 1.2em; }
 
 .author-image {
   box-sizing: border-box;
