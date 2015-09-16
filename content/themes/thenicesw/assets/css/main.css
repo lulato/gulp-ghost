@@ -205,6 +205,27 @@ picture {
 .home-template {
   background-color: #FAFAFA; }
 
+.main-header {
+  height: 31vh;
+  background: #a1a1a1 no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 2.5em; }
+
+.vertical {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em; }
+  .vertical::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .vertical .page-title {
+    font-size: 1.8em;
+    color: #477dca;
+    text-transform: uppercase; }
+
 .content {
   max-width: 68em;
   margin-left: auto;
@@ -510,22 +531,6 @@ header.navigation {
         header.navigation .search-bar input {
           box-sizing: border-box;
           display: block; } }
-
-.main-header {
-  height: 31vh;
-  background: #a1a1a1 no-repeat center center;
-  background-size: cover;
-  width: 100%; }
-
-.vertical {
-  max-width: 68em;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 2em; }
-  .vertical::after {
-    clear: both;
-    content: "";
-    display: table; }
 
 .main-nav {
   padding: 35px 40px; }

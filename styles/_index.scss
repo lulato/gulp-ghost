@@ -2,11 +2,29 @@
   background-color: #FAFAFA;
 }
 
+// this needs to be moved
+.main-header {
+  height: 31vh;
+  background: #a1a1a1 no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  margin-bottom: 2.5em;
+
+}
+.vertical{
+    @include outer-container;
+    padding: 2em;
+    .page-title {
+      font-size: 1.8em;
+      color: $blue;
+      text-transform: uppercase;
+    }
+}
+
+
 .content {
   @include outer-container;
   // background-color: green;
-  
-  
 }
 
 .articles {
