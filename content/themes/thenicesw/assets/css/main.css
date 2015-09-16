@@ -202,6 +202,9 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.home-template {
+  background-color: #FAFAFA; }
+
 .content {
   max-width: 68em;
   margin-left: auto;
@@ -212,8 +215,7 @@ picture {
     display: table; }
 
 .articles {
-  padding-top: 1em;
-  background-color: #FAFAFA; }
+  padding-top: 1em; }
 
 @media screen and (min-width: 40em) {
   .sidebar {

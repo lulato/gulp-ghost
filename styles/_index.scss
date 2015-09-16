@@ -1,3 +1,7 @@
+.home-template {
+  background-color: #FAFAFA;
+}
+
 .content {
   @include outer-container;
   // background-color: green;
@@ -7,7 +11,7 @@
 
 .articles {
   padding-top: 1em;
-  background-color: #FAFAFA;
+  
   // $medium-screen: em(640) !default;
   // $large-screen: em(860);
   // @include media($medium-screen) {
